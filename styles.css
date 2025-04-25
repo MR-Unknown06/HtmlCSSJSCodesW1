@@ -1,0 +1,135 @@
+:root {
+    --primary-blue: #3498db;
+    --dark-blue: #2980b9;
+    --accent-green: #2ecc71;
+    --dark-green: #27ae60;
+    --black: #2c3e50;
+    --light-gray: #010101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(237, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(21, 91, 89, 0.2);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(to right, var(--primary-blue), var(--accent-green));
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.form-container {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--primary-blue), var(--accent-green));
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, var(--dark-blue), var(--dark-green));
+    transform: translateY(-2px);
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    color: var(--black);
+    font-size: 14px;
+}
+
+.footer a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.password-strength {
+    height: 5px;
+    background-color: #eee;
+    margin-top: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.strength-meter {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(8, 15, 243);
+    transition: all 0.3s;
+}
+
+.show-password {
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    cursor: pointer;
+    color: var(--black);
+}
